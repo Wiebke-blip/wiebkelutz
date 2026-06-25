@@ -1,12 +1,198 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-  <title>Wiebke Lutz Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wiebke Lutz – Profil</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a1a1a;
+    padding: 64px 48px;
+    max-width: 780px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+  }
+
+  .meta {
+    font-size: 13.5px;
+    color: #555;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 16px;
+    margin-bottom: 4px;
+  }
+
+  .meta span::before {
+    content: '·';
+    margin-right: 16px;
+    color: #bbb;
+  }
+
+  .meta span:first-child::before { content: none; margin-right: 0; }
+
+  .contact {
+    font-size: 13px;
+    color: #555;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-top: 4px;
+  }
+
+  .contact a {
+    color: #1a4a7a;
+    text-decoration: none;
+  }
+
+  .contact a:hover { text-decoration: underline; }
+
+  .dot {
+    color: #bbb;
+    margin: 0 10px;
+  }
+
+  .section {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1.5px solid #1a4a7a;
+  }
+
+  .section-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a4a7a;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 0;
+    font-size: 13.5px;
+    color: #333;
+    line-height: 1.8;
+  }
+
+  .tags span {
+    white-space: nowrap;
+  }
+
+  .tags span::after {
+    content: ' ·';
+    color: #aaa;
+    margin: 0 8px;
+  }
+
+  .tags span:last-child::after { content: none; }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .link-item {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    font-size: 14px;
+  }
+
+  .link-label {
+    color: #888;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    width: 100px;
+    flex-shrink: 0;
+  }
+
+  .link-item a {
+    color: #1a4a7a;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .link-item a:hover { text-decoration: underline; }
+
+  .link-desc {
+    color: #888;
+    font-size: 12.5px;
+    margin-left: 4px;
+  }
+</style>
 </head>
 <body>
-  <h1>Wiebke Lutz</h1>
-  <p>UI/UX Designer</p>
 
-  <a href="portfolio.pdf">Download Portfolio (PDF)</a>
+<h1>Wiebke Lutz</h1>
+
+<div class="meta">
+  <span>UI/UX Designer &amp; HCI Researcher</span>
+  <span>Medieninformatik</span>
+</div>
+
+<div class="contact">
+  <a href="mailto:wiebkelutz@gmail.com">wiebkelutz@gmail.com</a>
+  <span class="dot">·</span>
+  <span>+49 1511 / 4907355</span>
+  <span class="dot">·</span>
+  <span>Bad Oldesloe</span>
+</div>
+
+<div class="section">
+  <div class="section-title">Kernkompetenzen</div>
+  <div class="tags">
+    <span>UX/UI Design</span>
+    <span>User Research</span>
+    <span>Responsive Webdesign</span>
+    <span>Figma &amp; Axure</span>
+    <span>Design Thinking</span>
+    <span>Usability &amp; Accessibility (WCAG)</span>
+    <span>Wireframing &amp; Prototyping</span>
+    <span>Informationsarchitektur</span>
+    <span>Design Systems</span>
+    <span>HTML/CSS</span>
+    <span>React &amp; Vue</span>
+    <span>Agile Methoden (Scrum/Kanban)</span>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Dokumente</div>
+  <div class="links">
+    <div class="link-item">
+      <span class="link-label">Portfolio</span>
+      <a href="Portfolio.pdf">portfolio.wiebkelutz.de</a>
+      <span class="link-desc">Projekte &amp; Fallstudien</span>
+    </div>
+    <div class="link-item">
+      <span class="link-label">Kurzlebenslauf</span>
+      <a href="Kurzlebenslauf_Wiebke_Lutz.pdf">Lebenslauf_Lutz_kurz.pdf</a>
+      <span class="link-desc">1 Seite · PDF</span>
+    </div>
+    <div class="link-item">
+      <span class="link-label">Lebenslauf</span>
+      <a href="Lebenslauf_Wiebke_Lutz.pdf">Lebenslauf_Lutz_vollstaendig.pdf</a>
+      <span class="link-desc">Vollständig · PDF</span>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
